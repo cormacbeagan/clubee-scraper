@@ -117,7 +117,7 @@ td {
 </head>
 <body>
 
-  <table aria-label="Studentenstadt fixtures list>
+  <table aria-label="Studentenstadt fixtures list">
   ${games
     .map((game) => {
       if (!game.plannedKickOff) return "";
@@ -162,6 +162,6 @@ td {
   </table>
   </body>
   </html>`;
-
+  console.log(htmlString);
   return htmlString;
 };
