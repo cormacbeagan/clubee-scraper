@@ -4,9 +4,9 @@
   "description": "A web scraper built with Node.js, Express, and TypeScript",
   "main": "dist/index.js",
   "scripts": {
-    "start": "node dist/index.js",
+    "start": "node public/index.js",
     "dev": "nodemon index.ts",
-    "build": "tsc && cp -r public dist",
+    "build": "tsc",
     "test": "jest"
   },
   "author": "Your Name",
