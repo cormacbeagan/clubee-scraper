@@ -6,8 +6,6 @@ export const generateHtml = (games: IGame[]) => {
 <html lang="en">
 <head>
 
-</head>
-<body>
 <style>
 body {
   margin: 0;
@@ -114,8 +112,11 @@ td {
   border-radius: 4px;
   background: #cecece;
 }
-
 </style>
+
+</head>
+<body>
+
   <table aria-label="Studentenstadt fixtures list>
   ${games
     .map((game) => {
