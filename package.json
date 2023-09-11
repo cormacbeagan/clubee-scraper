@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node dist/index.js",
     "dev": "nodemon index.ts",
-    "build": "tsc && cp -r public dist/public",
+    "build": "tsc && cp -r public dist",
     "test": "jest"
   },
   "author": "Your Name",
