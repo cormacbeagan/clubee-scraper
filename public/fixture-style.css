@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: Catamaran, Helvetica, sans-serif;
+  background: #1b252f;
+}
+
+* {
+  border: none;
+}
+
+table {
+  margin: 10px auto;
+  width: 80%;
+  height: 100%;
+  min-height: 300px;
+  min-width: 300px;
+  background: #1b252f;
+  border: 1px solid white;
+  border-radius: 2px;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+tbody {
+  background: white;
+  border-radius: 3px;
+}
+
+th {
+  padding: 0 5px 0 5px;
+}
+
+tr {
+  border: 1px solid #1b252f;
+  margin-top: 8px;
+  border-radius: 1px;
+  background: #1b252f;
+}
+
+tr:last-child {
+  height: 10px;
+  font-size: 12px;
+  text-align: right;
+  margin: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.link {
+  padding: 0;
+  padding-bottom: 2px;
+}
+
+td {
+  padding: 0 3px 0 3px;
+  border-radius: 1px;
+  max-width: 160px;
+  overflow: hidden;
+}
+
+.center {
+  text-align: center;
+}
+
+.date-cell {
+  background: #1b252f;
+  color: white;
+}
+
+.team-cell {
+  background: white;
+}
+
+.results-cell {
+  background: #cecece;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.empty-row-cell {
+  height: 2px;
+  border: 5px solid #1b252f;
+  border-radius: 4px;
+  background: #cecece;
+  /* border-bottom: 1px solid white; */
+}
