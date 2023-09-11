@@ -24,7 +24,7 @@ app.use(express.json({ limit: "50mb" }));
 app.get("/", async (req, res) => {
   try {
     const json = await scraper(zweiteBLsüd);
-    const games = await transformData(json);
+    const games = transformData(json);
     const htmlString = generateHtml(games);
     res.setHeader(
       "Content-Security-Policy",
