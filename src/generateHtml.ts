@@ -8,7 +8,7 @@ export const generateHtml = (games: IGame[]) => {
 <link rel="stylesheet" type="text/css" href="fixture-style.css">
 </head>
 <body>
-  <table>
+  <table aria-label="Studentenstadt fixtures list>
   ${games
     .map((game) => {
       if (!game.plannedKickOff) return "";
