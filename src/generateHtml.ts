@@ -9,8 +9,10 @@ export const generateHtml = (games: IGame[]) => {
 </head>
 <body>
   <table>
-  ${games.map((game) => {
-    return `
+  ${games
+    .map((game) => {
+      if (!game.plannedKickOff) return "";
+      return `
     <tr>
         <td class="dateday align-right date-cell">
             ${new Date(game.plannedKickOff).toLocaleDateString("de-DE", {
@@ -41,7 +43,8 @@ export const generateHtml = (games: IGame[]) => {
         <td class="results-cell">${game.liveData.awayScore ?? 0}</td>
     </tr>
     `;
-  })}
+    })
+    .join("")}
   <tr>
     <td colspan="7" class="link">
       <a href="https://www.rugbydeutschland.org/" title="DRV" target="_blank" rel="noreferrer">&copy; DRV</a>
