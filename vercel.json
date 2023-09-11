@@ -19,5 +19,8 @@
       },
       "dest": "dist/index.js"
     }
-  ]
+  ],
+  "static": {
+    "directory": "dist/public"
+  }
 }
